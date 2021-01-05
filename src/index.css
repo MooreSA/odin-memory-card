@@ -1,0 +1,85 @@
+/* Global Defaults */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: #161315;
+}
+
+body {
+    background-color: #BDCDB6;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* makes images responsive */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 
+
+Colors 
+#BDCDB6 - elevation 0
+#A7BD9E - elevation 1
+#91AC86 - elevation 2
+#7B9C6D - elevation 3
+*/
+
+/* End Global */
+
+
+
+/* HEADER CSS */
+
+header {
+    background-color: #A7BD9E;
+    padding: 20px;
+    font-family: 'Crimson Text', serif;
+    text-align: center;
+}
+
+/* END HEADER CSS */
+
+/* ScoreBoard CSS */
+
+.score-wrapper {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+/* End Scoreboard CSS */
+
+.card-wrapper {
+    width: 80%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    /* shorthand for flex-direction and flex-wrap */
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center ;
+    justify-content: space-evenly;
+}
+
+.game-card {
+    background-color: #A7BD9E;
+    margin: 15px 10px;
+    max-width: 250px;
+    max-height: 250px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 4px 2px #91AC86;
+    flex-basis: auto;
+    outline: none;
+}
+
+.game-card:hover {
+    cursor: pointer;
+}
+
+.game-card:active {
+    box-shadow: inset 0px 0px 5px 2px #91AC86;
+}
