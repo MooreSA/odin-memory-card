@@ -8,11 +8,12 @@ const Card = (props) => {
     <div
       href="#"
       onClick={handleCardClick}
-      className="game-card"
       role="button"
       tabIndex="0"
+      className="gameboard__card"
     >
       <img
+        className="gameboard__img"
         src={imgSrc}
         alt={imgAlt}
         id={cardId}

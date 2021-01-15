@@ -1,0 +1,34 @@
+.gameboard {
+    width: 80%;
+    max-width: 1250px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__card {
+        background-color: $bg-1-elevate;
+        margin: 15px 10px;
+        max-width: 250px;
+        max-height: 250px;
+        padding: 15px;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px 2px mix($bg-1-elevate, $background-color);
+        flex-basis: auto;
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+            box-shadow: inset 0px 0px 5px 2px $bg-2-elevate;
+        }
+    }
+
+    &__img {
+        max-width: 100%;
+        height: auto;
+    }
+}

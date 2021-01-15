@@ -4,11 +4,11 @@ const ScoreBoard = (props) => {
   const { score, highScore } = props;
 
   return (
-    <div className="score-wrapper">
-      <div>
+    <div className="scoreboard">
+      <div className="scoreboard__current">
         Current Score: {score}
       </div>
-      <div>
+      <div className="scoreboard__highscore">
         High Score: {highScore}
       </div>
     </div>

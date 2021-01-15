@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Crimson Text';
+    src: url('../fonts/CrimsonText-Regular.ttf');
+}
+
+$background-color: #BDCDB6;
+$bg-1-elevate: #A7BD9E;
+$bg-2-elevate: #91AC86;
+$bg-3-elevate: #7B9C6D;
+
+$font-title: 'Crimson Text', serif;
+$font-body: 'Roboto', sans-serif;
+$font-color: #161315;
+$font-size: 14px;
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: $font-color;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: $background-color;
+    font-family: $font-body;
+}

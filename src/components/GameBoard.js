@@ -92,7 +92,7 @@ const GameBoard = (props) => {
   };
 
   return (
-    <div className="card-wrapper">
+    <div className="gameboard">
       {cardsInfo.map((cardData) => (
         <Card cardData={cardData} handleCardClick={handleCardClick} key={cardData.cardId} />
       ))}

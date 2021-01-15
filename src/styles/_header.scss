@@ -1,0 +1,13 @@
+.header {
+    background-color: #A7BD9E;
+    padding: 20px;
+    text-align: center;
+
+    &__title {
+        font-family: $font-title;
+    }
+
+    &__subtitle {
+        font-family: $font-body;
+    }
+}
