@@ -1,9 +1,8 @@
-import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import ScoreBoard from './components/ScoreBoard';
-import GameBoard from './components/GameBoard';
+import React, { useEffect, useState } from 'react';
+import GameBoard from './GameBoard';
+import ScoreBoard from './ScoreBoard';
 
-const App = () => {
+const Content = () => {
   const [score, setScore] = useState(0);
   const [highScore, setHighSore] = useState(0);
 
@@ -11,16 +10,14 @@ const App = () => {
   const resetScore = () => setScore(0);
   const incrementScore = () => setScore(score + 1);
 
-  // check high score
   useEffect(() => (score > highScore ? newHighScore() : null), [score]);
 
   return (
-    <div>
-      <Header />
+    <div className="content">
       <ScoreBoard score={score} highScore={highScore} />
       <GameBoard resetScore={resetScore} incrementScore={incrementScore} />
     </div>
   );
 };
 
-export default App;
+export default Content;

@@ -1,21 +1,44 @@
 @font-face {
-    font-family: 'Roboto';
-    src: url('../fonts/Roboto-Regular.ttf');
+    font-family: 'Nunito';
+    src: url('../fonts/NunitoSans-Regular.ttf')
 }
 
-@font-face {
-    font-family: 'Crimson Text';
-    src: url('../fonts/CrimsonText-Regular.ttf');
+@mixin flex-item($direction, $wrap) {
+    display: flex;
+
+    flex-flow: $direction $wrap;
 }
 
-$background-color: #BDCDB6;
-$bg-1-elevate: #A7BD9E;
-$bg-2-elevate: #91AC86;
-$bg-3-elevate: #7B9C6D;
+@mixin link($font-color) {
+    text-decoration: none;
+    color: $font-color;
 
-$font-title: 'Crimson Text', serif;
-$font-body: 'Roboto', sans-serif;
-$font-color: #161315;
+    &:hover {
+        text-decoration: underline;
+    }
+    &:link, &:visited {
+        color: $font-color;
+    }
+}
+
+$color-base: #FAF9F9;
+$color-light-accent: #868E95;
+$color-brand: #2A5010;
+$color-dark-accent: #756670;
+$color-dark: #16151C;
+
+$color-primary: #748ea4;
+$color-info: #243c40;
+$color-success: #58a569;
+$color-warnng: #d59531;
+$color-danger: #f44336;
+
+// $background-color: #BDCDB6;
+// $bg-1-elevate: #A7BD9E;
+// $bg-2-elevate: #91AC86;
+// $bg-3-elevate: #7B9C6D;
+
+// $font-color: #161315;
 $font-size: 14px;
 
 
@@ -24,14 +47,13 @@ $font-size: 14px;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    color: $font-color;
 }
 
-html, body {
+html, body, #root {
     height: 100%;
 }
 
 body {
-    background-color: $background-color;
-    font-family: $font-body;
+    background-color: $color-base;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
 }

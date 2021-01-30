@@ -1,21 +1,19 @@
-import microsoft from './images/microsoft.png';
-import google from './images/google.png';
-import mcds from './images/mcdonalds.png';
-import vw from './images/vw.png';
-import pepsi from './images/pepsi.png';
-import twitter from './images/twitter.png';
-import adidas from './images/adidas.png';
-import shell from './images/shell.png';
+import '@fortawesome/fontawesome-free/js/fontawesome';
+import '@fortawesome/fontawesome-free/js/solid';
 
-const imgInfo = [
-  { img: microsoft, alt: 'microsoft-Logo' },
-  { img: google, alt: 'Google-Logo' },
-  { img: mcds, alt: "McDonald's-Logo" },
-  { img: vw, alt: 'Volkswagen-Logo' },
-  { img: pepsi, alt: 'Pepsi-Logo' },
-  { img: twitter, alt: 'Twitter-Logo' },
-  { img: adidas, alt: 'adidas-Logo' },
-  { img: shell, alt: 'Shell-Logo' },
+const classNames = [
+  'fab fa-amazon fa-7x',
+  'fab fa-airbnb fa-7x',
+  'fab fa-apple fa-7x',
+  'fab fa-chrome fa-7x',
+  'fab fa-facebook-square fa-7x',
+  'fab fa-github fa-7x',
+  'fab fa-linux fa-7x',
+  'fab fa-microsoft fa-7x',
+  'fab fa-node-js fa-7x',
+  'fab fa-react fa-7x',
+  'fab fa-sass fa-7x',
+  'fab fa-python fa-7x',
 ];
 
-export default imgInfo;
+export default classNames;

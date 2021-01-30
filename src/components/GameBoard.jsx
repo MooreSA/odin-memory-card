@@ -1,19 +1,17 @@
 import React, { useState } from 'react';
 import Card from './Card';
-import imgInfo from '../images';
+import classNames from '../images';
 
 const GameBoard = (props) => {
   const { incrementScore, resetScore } = props;
-
   // there must be a better way of doing this
   const [cardsInfo, setCardsInfo] = useState(() => {
     const cardArray = [];
-    for (let i = 0; i < imgInfo.length; i += 1) {
+    for (let i = 0; i < classNames.length; i += 1) {
       cardArray.push({
-        imgSrc: imgInfo[i].img,
-        imgAlt: imgInfo[i].alt,
+        className: classNames[i],
         clicked: false,
-        cardId: `card-${imgInfo[i].alt}`,
+        cardId: classNames[i],
       });
     }
     return cardArray;
@@ -67,6 +65,7 @@ const GameBoard = (props) => {
 
   // checks if the card that matches cardId is clicked
   const cardClicked = (cardId) => {
+    // console.log(cardId);
     for (let i = 0; i < cardsInfo.length; i += 1) {
       if (cardsInfo[i].cardId === cardId) {
         if (cardsInfo[i].clicked) {
@@ -80,7 +79,7 @@ const GameBoard = (props) => {
 
   // handles the clicked passed up from the card component
   const handleCardClick = (event) => {
-    const targetId = event.target.id;
+    const targetId = event.target.dataset.id;
     if (cardClicked(targetId)) {
       resetGameBoard();
       shuffleCards();

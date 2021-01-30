@@ -5,16 +5,16 @@
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
 
     &__card {
-        background-color: $bg-1-elevate;
+        background-color: $color-light-accent;
         margin: 15px 10px;
         max-width: 250px;
         max-height: 250px;
         padding: 15px;
         border-radius: 15px;
-        box-shadow: 2px 2px 4px 2px mix($bg-1-elevate, $background-color);
+        box-shadow: 2px 2px 4px 2px mix($color-base, $color-light-accent);
         flex-basis: auto;
         outline: none;
 
@@ -23,7 +23,7 @@
         }
 
         &:active {
-            box-shadow: inset 0px 0px 5px 2px $bg-2-elevate;
+            box-shadow: inset 0px 0px 5px 2px $color-dark-accent;
         }
     }
 
